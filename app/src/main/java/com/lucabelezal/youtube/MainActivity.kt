@@ -39,7 +39,8 @@ class MainActivity : AppCompatActivity() {
                     videos.clear()
                     videos.addAll(listVideo.data)
                     videoAdapter.notifyDataSetChanged()
-                    progress_recycler.visibility = View.GONE
+                    motion_container.removeView(progress_recycler)
+//                    progress_recycler.visibility = View.GONE
                 }
             }
         }
